@@ -1,16 +1,19 @@
 import React from 'react'
 
-function SerComp() {
+function SerComp({value}) {
+  const {image,heading,details} = value
   return (
-    <div className=' w-1/2 h-4/5 flex flex-col items-center border-2 rounded-lg bg-white'>
-    
-    <img src="/src/assets/officer.png" className="w-1/2 h-1/2" alt="officer image" />
-    
-    <div className='w-full h-1/2 flex flex-col justify-around items-center'>
-        <h1 className=' text-2xl md:text-4xl text-center'>Security</h1>
-        <p className='text-sm px-1 md:text-lg'> Security for sure and worry free Stay</p>
-    </div>
+    <div className='w-[90%] md:w-1/3 md:h-2/4 lg:h-1/2 lg:w-1/5 h-1/3 shadow-lg rounded-xl flex flex-col items-center'>
 
+      <img src={image} alt="card image" className=' w-3/5 h-3/5 ' />
+
+      <div>
+      <h1 className='text-2xl font-medium px-2 '>{heading}</h1>
+
+      <p className='px-2 text-base'>{details}</p>
+      </div>
+
+      
     </div>
   )
 }

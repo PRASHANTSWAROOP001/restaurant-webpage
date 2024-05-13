@@ -6,26 +6,32 @@ import { GoArrowDownRight } from "react-icons/go";
 import { RiMapPinLine } from "react-icons/ri";
 function Home() {
   return (
-    <main className='w-full flex flex-col md:flex-row h-screen'>
-      <section className='w-full h-1/3 md:w-1/2 md:h-full bg-slate-400'>
-        <div className=' w-full h-2/3'>
+    <main className='w-full flex flex-col md:flex-row h-screen bg-gray-100'>
+      <section className='w-full h-full md:w-1/2 md:h-full bg-gray-100'>
+        <div className=' w-full h-2/3 '>
           <img src='./src/assets/ayodhya.webp' alt="backrgound Image"  className='w-full h-full'/>
         </div>
-        <div className='w-full h-1/3 flex flex-col'>
 
-          <div className=' w-full border-2 border-green-400 rounded-lg justify-center items-center h-1/2 bg-gray-100'>
+        <div className=' md:w-full  h-1/3  flex flex-row  justify-around pt-2  md:py-5'>
 
-            <div className='flex flex-row items-center justify-between '>
-            <div className=' flex flex-row items-center'><h1 className='text-lg px-1 font-semibold'> Address </h1> <IoIosArrowDropright  className=' w-8 h-8 text-green-500'/></div>
-             <a href="https://maps.app.goo.gl/kE8NNUgpTJtXPU5S8" target='_blank'> <RiMapPinLine className=' w-8 h-8 hover:text-orange-400 ' /> </a>
-            </div>
-
+        <div className='px-2 border-r-4 border-black h-1/3 '>  
+            <h1 className=' text-lg md:text-xl font-bold py-1'>Unique offer</h1>
+            <p>For Nature Lovers </p>
           </div>
 
-          <div className='w-full h-1/2 bg-gray-100  flex justify-start gap-10 items-center'>
+          <div className=' px-2 border-r-4 border-black h-1/3 '>  
+            <h1 className=' text-xl font-bold py-1'> 4+</h1>
+            <p>Hills to Explore</p>
+          </div>
 
+          <div className='px-2 border-r-4 border-black h-1/3'>
+            <h1  className=' text-xl font-bold py-1'>3+ </h1>
+            <p>Dams to Visit</p>
+          </div>
 
-             
+          <div className='px-2 border-r-4 border-black h-1/3 hidden md:block'>
+            <h1  className=' text-xl font-bold py-1 '>Local cuisine </h1>
+            <p> To Taste and Enjoy </p>
           </div>
 
         </div>
@@ -41,20 +47,34 @@ function Home() {
 
         <div className=' w-full h-[90%]'>
 
-        <h1 className='px-2 py-2 text-4xl font-semibold  text-pink-400'>King Sukh Guest House</h1>
-        <p className='px-2 py-2 text-2xl'> Welcome to Kingsukh - Your cozy corner in the hills of Purulia. Reserve your spot for a peaceful getaway surrounded by nature. Come, relax and make memories with us!!</p>
+      <h1 className='px-2 py-2 text-3xl md:text-5xl font-semibold font-sans text-pink-400'>Escape to Hillside Retreat where <br /> comfort meets nature’s charm. <br /> Book Your Stay</h1>
+        <p className='px-2 py-2 text-sm md:text-base'> Welcome to Kingsukh - Your cozy corner in the hills of Purulia. Reserve your spot for a peaceful getaway surrounded by nature. Come, relax and make memories with us!!</p>
 
           {/* content  */}
 
-       <h4 className='text-3xl px-1 text-pink-400 font-semibold  '>Address</h4>
-
-       <p className='px-1 text-xl'> Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</p>
-
 
           
-        <div className=' w-full flex flex-row  justify-center   gap-5 py-5'>
-        <button className='bg-yellow-400 px-5 py-2 border-2 rounded-lg font-semibold'>Book Now</button>
-         <button className='bg-zinc-700 text-white px-4 py-2 border-2 rounded-lg'>Inquire</button> 
+        <div className=' w-full py-5 px-3'>
+        <button className='bg-black px-5  text-white py-2 border-2 rounded-lg font-semibold'>Book Now</button>
+        </div>
+
+        <div className=' w-[90%] md:w-full h-1/4  flex flex-row justify-around items-center lg:mt-20 '>
+
+          <div className=' px-2 border-r-4 border-black h-1/3'>  
+            <h1 className=' text-xl font-bold'> 100 +</h1>
+            <p>Booking Confirmed</p>
+          </div>
+
+          <div className='px-2 border-r-4 border-black h-1/3'>
+            <h1  className=' text-xl font-bold '>50+ </h1>
+            <p>Happy Customers</p>
+          </div>
+
+          <div className='px-2 border-r-4 border-black h-1/3'>
+            <h1  className=' text-xl font-bold '>4.8+ </h1>
+            <p>Rating </p>
+          </div>
+
         </div>
 
         </div>

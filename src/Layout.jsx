@@ -8,6 +8,7 @@ function Layout() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <Outlet className="flex-grow" />
+   
     </div>
   )
 }

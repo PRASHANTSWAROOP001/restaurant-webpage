@@ -14,12 +14,12 @@ function Navbar() {
   }
 
   return (
-    <header className="w-full h-14 border-2  flex items-center sticky z-10 bg-white top-0 left-0">
+    <header className="w-full h-14  border-b-2  flex items-center sticky z-10 bg-white top-0 left-0">
 
       <div className=' w-full  flex justify-between items-center px-4 md:py-8  '>
       <div className=" w-1/5 md:py-4">
         <Link to="/">
-          <h1 className=' '>King Sukh</h1>
+          <h1 className=' text-lg md:text-xl md:font-semibold text-orange-400 '>King Sukh</h1>
         </Link>
       </div>
 
@@ -27,22 +27,31 @@ function Navbar() {
         <nav className=" hidden md:block " >
           <ul className=' flex justify-between items-center'>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink className={({ isActive }) =>
+                  `${
+                    isActive
+                      ? "text-orange-400 text-lg "
+                      : "text-gray-700 text-lg "
+                  }`
+                } to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/services">Services</NavLink>
+              <NavLink
+               to="/services"
+
+               className={({isActive})=>`${ isActive ? "text-orange-400 text-lg": "text-gray-700 text-lg"}`}
+               >Services</NavLink>
             </li>
             <li>
-              <NavLink to="/rooms">Rooms</NavLink>
+              <NavLink className={({isActive})=>`${isActive ? "text-orange-400 text-lg":"text-gray-700 text-lg"}`} to="/rooms">Rooms</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink
+              className={({isActive})=>`${isActive ?"text-orange-400 text-lg": "text-gray-700 text-lg"}`}
+              to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/gallary">Gallary</NavLink>
-            </li>
-            <li>
-              <NavLink>Contact</NavLink>
+              <NavLink className={({isActive})=>`${isActive ?"text-orange-400 text-lg": "text-gray-700 text-lg"}`} to="/gallary">Gallary</NavLink>
             </li>
           </ul>
         </nav>
@@ -57,27 +66,25 @@ function Navbar() {
       </button>
 
       {open &&
-          <div className='absolute w-full items-center justify-center top-14 right-0 bg-transparent md:hidden'>
+          <div className='absolute w-full items-center justify-center top-12 right-0 bg-gray-100 md:hidden'>
             <nav>
               <ul className='flex flex-col justify-center items-center gap-2'>
                 <li>
-                  <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
+                  <NavLink to="/" className={({isActive})=>`${isActive ?"text-orange-400 text-lg": "text-gray-700 text-lg"}`} onClick={() => setOpen(false)}>Home</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/services" onClick={() => setOpen(false)}>Services</NavLink>
+                  <NavLink to="/services" className={({isActive})=>`${isActive ?"text-orange-400 text-lg": "text-gray-700 text-lg"}`} onClick={() => setOpen(false)}>Services</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/rooms">Rooms</NavLink>
+                  <NavLink className={({isActive})=>`${isActive ?"text-orange-400 text-lg": "text-gray-700 text-lg"}`} to="/rooms">Rooms</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/about">About</NavLink>
+                  <NavLink className={({isActive})=>`${isActive ?"text-orange-400 text-lg": "text-gray-700 text-lg"}`} to="/about">About</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/gallary">Gallery</NavLink>
+                  <NavLink className={({isActive})=>`${isActive ?"text-orange-400 text-lg": "text-gray-700 text-lg"}`} to="/gallary">Gallery</NavLink>
                 </li>
-                <li>
-                  <NavLink to="/contact">Contact</NavLink>
-                </li>
+                
               </ul>
             </nav>
           </div>
