@@ -56,7 +56,7 @@ function Home() {
         <button className=' border-2 text-lg font-semibold py-1 px-3 mx-2  hover:border-green-400 rounded-md'><a href="https://maps.app.goo.gl/fTkygbNuLaZ5wWvF9" target="_blank" rel="noopener noreferrer">Location</a></button>
         </div>
 
-        <div className=' w-[90%] md:w-full h-1/4  flex flex-row justify-around items-center lg:mt-14 '>
+        <div className=' w-[90%] md:w-full h-1/4  flex flex-row justify-around items-center lg:mt-10 '>
 
           <div className=' px-2 border-r-4 border-black h-1/3'>  
             <h1 className=' text-xl font-bold'> 100 +</h1>
