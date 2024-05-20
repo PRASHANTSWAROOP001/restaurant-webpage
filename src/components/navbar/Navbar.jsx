@@ -58,7 +58,7 @@ function Navbar() {
       </div>
 
       <div className=' hidden md:block'>
-         <button className=' px-4 py-2 bg-orange-400 rounded-lg'>Book Now</button>
+         <button className=' px-4 py-2 bg-orange-400 rounded-lg hover:bg-orange-300'><a href="https://wa.me/919007062180?text=I%20would%20like%20to%20book%20a%20hotel%20room" target="_blank" rel="noopener noreferrer">Book Now</a></button>
       </div>
 
       <button className=' md:hidden' onClick={toggleSwitch}>

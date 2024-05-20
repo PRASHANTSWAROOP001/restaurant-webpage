@@ -8,18 +8,18 @@ function Services() {
   const image1 = {
     image:"./src/assets/tour guide.jpg",
     heading:"Tour Guide",
-    details:" We provide tour guides so that people can explore and enjoy best of our locality without any hassle."
+    details:" We provide tour guides so that people can explore and enjoy witout worries."
   }
 
   const image2 = {
     image:"./src/assets/restraunt.jpg",
     heading:"Restraunt",
-    details:"Enjoy the local and best cusine without leaving comfort of your room. we provide tasty food round o clock."
+    details:"Enjoy the local and best cusine without leaving comfort of your room. "
   }
   const image3 = {
     image:"./src/assets/shop.jpg",
     heading:"Service",
-    details:"Our services are open round the clock."
+    details:"Our services are open round the clock. So sit back,relax and enjoy."
   }
 
   const image4= {

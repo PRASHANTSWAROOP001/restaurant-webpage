@@ -19,18 +19,17 @@ function Rooms() {
           />
 
           <div className="  pt-2 pb-2">
-            <h1 className=" text-xl px-1">Cozy Rooms</h1>
+            <h1 className=" text-xl px-2 font-semibold">Cozy Retreat</h1>
 
-            <p className="text-sm px-1">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
-              esse placeat odit dolores ipsam saepe perspiciatis nihil fugit
-              impedit adipisci?
+            <p className="text-sm px-2 ">
+            Enjoy luxury on a budget with our cozy rooms for couples at just ₹1500/night. Book now for a comfortable stay that won’t cost a fortune!
             </p>
+            <h3 className='text-lg px-2 '>Starts At <span className=' font-medium'>₹1500/night</span></h3>
           </div>
 
           <div className="pb-1 flex flex-row justify-center  ">
             <button className="px-3 py-2 bg-pink-400 hover:bg-pink-300 rounded-md  text-white">
-              Book Now
+            <a href="https://wa.me/919007062180?text=I%20Want%20To%20Book%20A%20Cozy%20Retreat%20Room." target="_blank" rel="noopener noreferrer">Book Now</a>
             </button>
           </div>
         </div>
@@ -43,18 +42,17 @@ function Rooms() {
           />
 
           <div className="  pt-2 pb-2">
-            <h1 className=" text-xl px-1">Cozy Rooms</h1>
+            <h1 className=" text-xl font-semibold px-2">Budget Bliss</h1>
 
-            <p className="text-sm px-1">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
-              esse placeat odit dolores ipsam saepe perspiciatis nihil fugit
-              impedit adipisci?
+            <p className="text-sm px-2">
+            Your Cozy Escape at ₹1000/Night. Ideal for couples or solo adventurers on a budget, our rooms offer a stylish sanctuary without the hefty price tag.
             </p>
+            <h1  className='px-2 py-1 text-lg'>Starts At <span className='font-medium'>₹1000/Night</span></h1>
           </div>
 
           <div className="pb-1 flex flex-row justify-center ">
             <button className="px-3 py-2 bg-pink-400 hover:bg-pink-300 rounded-md  text-white">
-              Book Now
+              <a href="https://wa.me/919007062180?text=I%20Want%20To%20Book%20A%20Budget%20Bliss%20Room." target="_blank" rel="noopener noreferrer">Book Now</a>
             </button>
           </div>
         </div>
