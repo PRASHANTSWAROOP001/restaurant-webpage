@@ -1,4 +1,3 @@
-Sure! Here is the content formatted in Markdown for your README.md file:
 
 ```markdown
 # 🍽️ Restaurant Web Page
